@@ -1,4 +1,4 @@
-Bolt [![Coverage Status](https://coveralls.io/repos/boltdb/bolt/badge.svg?branch=master)](https://coveralls.io/r/boltdb/bolt?branch=master) [![GoDoc](https://godoc.org/github.com/boltdb/bolt?status.svg)](https://godoc.org/github.com/boltdb/bolt) ![Version](https://img.shields.io/badge/version-1.2.1-green.svg)
+Bolt 
 ====
 
 Bolt is a pure Go key/value store inspired by [Howard Chu's][hyc_symas]
@@ -78,7 +78,7 @@ Shopify and Heroku use Bolt-backed services every day.
 To start using Bolt, install Go and run `go get`:
 
 ```sh
-$ go get github.com/boltdb/bolt/...
+$ go get github.com/belfinor/bolt/...
 ```
 
 This will retrieve the library and install the `bolt` command line utility into
@@ -98,7 +98,7 @@ package main
 import (
 	"log"
 
-	"github.com/boltdb/bolt"
+	"github.com/belfinor/bolt"
 )
 
 func main() {
@@ -878,58 +878,3 @@ If you have additional notes that could be helpful for others, please submit
 them via pull request.
 
 
-## Other Projects Using Bolt
-
-Below is a list of public, open source projects that use Bolt:
-
-* [BoltDbWeb](https://github.com/evnix/boltdbweb) - A web based GUI for BoltDB files.
-* [Operation Go: A Routine Mission](http://gocode.io) - An online programming game for Golang using Bolt for user accounts and a leaderboard.
-* [Bazil](https://bazil.org/) - A file system that lets your data reside where it is most convenient for it to reside.
-* [DVID](https://github.com/janelia-flyem/dvid) - Added Bolt as optional storage engine and testing it against Basho-tuned leveldb.
-* [Skybox Analytics](https://github.com/skybox/skybox) - A standalone funnel analysis tool for web analytics.
-* [Scuttlebutt](https://github.com/benbjohnson/scuttlebutt) - Uses Bolt to store and process all Twitter mentions of GitHub projects.
-* [Wiki](https://github.com/peterhellberg/wiki) - A tiny wiki using Goji, BoltDB and Blackfriday.
-* [ChainStore](https://github.com/pressly/chainstore) - Simple key-value interface to a variety of storage engines organized as a chain of operations.
-* [MetricBase](https://github.com/msiebuhr/MetricBase) - Single-binary version of Graphite.
-* [Gitchain](https://github.com/gitchain/gitchain) - Decentralized, peer-to-peer Git repositories aka "Git meets Bitcoin".
-* [event-shuttle](https://github.com/sclasen/event-shuttle) - A Unix system service to collect and reliably deliver messages to Kafka.
-* [ipxed](https://github.com/kelseyhightower/ipxed) - Web interface and api for ipxed.
-* [BoltStore](https://github.com/yosssi/boltstore) - Session store using Bolt.
-* [photosite/session](https://godoc.org/bitbucket.org/kardianos/photosite/session) - Sessions for a photo viewing site.
-* [LedisDB](https://github.com/siddontang/ledisdb) - A high performance NoSQL, using Bolt as optional storage.
-* [ipLocator](https://github.com/AndreasBriese/ipLocator) - A fast ip-geo-location-server using bolt with bloom filters.
-* [cayley](https://github.com/google/cayley) - Cayley is an open-source graph database using Bolt as optional backend.
-* [bleve](http://www.blevesearch.com/) - A pure Go search engine similar to ElasticSearch that uses Bolt as the default storage backend.
-* [tentacool](https://github.com/optiflows/tentacool) - REST api server to manage system stuff (IP, DNS, Gateway...) on a linux server.
-* [Seaweed File System](https://github.com/chrislusf/seaweedfs) - Highly scalable distributed key~file system with O(1) disk read.
-* [InfluxDB](https://influxdata.com) - Scalable datastore for metrics, events, and real-time analytics.
-* [Freehold](http://tshannon.bitbucket.org/freehold/) - An open, secure, and lightweight platform for your files and data.
-* [Prometheus Annotation Server](https://github.com/oliver006/prom_annotation_server) - Annotation server for PromDash & Prometheus service monitoring system.
-* [Consul](https://github.com/hashicorp/consul) - Consul is service discovery and configuration made easy. Distributed, highly available, and datacenter-aware.
-* [Kala](https://github.com/ajvb/kala) - Kala is a modern job scheduler optimized to run on a single node. It is persistent, JSON over HTTP API, ISO 8601 duration notation, and dependent jobs.
-* [drive](https://github.com/odeke-em/drive) - drive is an unofficial Google Drive command line client for \*NIX operating systems.
-* [stow](https://github.com/djherbis/stow) -  a persistence manager for objects
-  backed by boltdb.
-* [buckets](https://github.com/joyrexus/buckets) - a bolt wrapper streamlining
-  simple tx and key scans.
-* [mbuckets](https://github.com/abhigupta912/mbuckets) - A Bolt wrapper that allows easy operations on multi level (nested) buckets.
-* [Request Baskets](https://github.com/darklynx/request-baskets) - A web service to collect arbitrary HTTP requests and inspect them via REST API or simple web UI, similar to [RequestBin](http://requestb.in/) service
-* [Go Report Card](https://goreportcard.com/) - Go code quality report cards as a (free and open source) service.
-* [Boltdb Boilerplate](https://github.com/bobintornado/boltdb-boilerplate) - Boilerplate wrapper around bolt aiming to make simple calls one-liners.
-* [lru](https://github.com/crowdriff/lru) - Easy to use Bolt-backed Least-Recently-Used (LRU) read-through cache with chainable remote stores.
-* [Storm](https://github.com/asdine/storm) - Simple and powerful ORM for BoltDB.
-* [GoWebApp](https://github.com/josephspurrier/gowebapp) - A basic MVC web application in Go using BoltDB.
-* [SimpleBolt](https://github.com/xyproto/simplebolt) - A simple way to use BoltDB. Deals mainly with strings.
-* [Algernon](https://github.com/xyproto/algernon) - A HTTP/2 web server with built-in support for Lua. Uses BoltDB as the default database backend.
-* [MuLiFS](https://github.com/dankomiocevic/mulifs) - Music Library Filesystem creates a filesystem to organise your music files.
-* [GoShort](https://github.com/pankajkhairnar/goShort) - GoShort is a URL shortener written in Golang and BoltDB for persistent key/value storage and for routing it's using high performent HTTPRouter.
-* [torrent](https://github.com/anacrolix/torrent) - Full-featured BitTorrent client package and utilities in Go. BoltDB is a storage backend in development.
-* [gopherpit](https://github.com/gopherpit/gopherpit) - A web service to manage Go remote import paths with custom domains
-* [bolter](https://github.com/hasit/bolter) - Command-line app for viewing BoltDB file in your terminal.
-* [btcwallet](https://github.com/btcsuite/btcwallet) - A bitcoin wallet.
-* [dcrwallet](https://github.com/decred/dcrwallet) - A wallet for the Decred cryptocurrency.
-* [Ironsmith](https://github.com/timshannon/ironsmith) - A simple, script-driven continuous integration (build - > test -> release) tool, with no external dependencies
-* [BoltHold](https://github.com/timshannon/bolthold) - An embeddable NoSQL store for Go types built on BoltDB
-* [Ponzu CMS](https://ponzu-cms.org) - Headless CMS + automatic JSON API with auto-HTTPS, HTTP/2 Server Push, and flexible server framework.
-
-If you are using Bolt in a project please send a pull request to add it to the list.
